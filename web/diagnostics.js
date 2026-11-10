@@ -21,6 +21,8 @@ async function refresh(){
   const connected=!!data.connected;
   status(connected?'Pico connected · '+data.port:'Pico offline'+(data.error?' · '+data.error:''),connected);
   setCommands(connected);
+  const badge=document.querySelector('header .badge');
+  if(badge){badge.textContent=connected?'SIMULATION + LIVE PICO TELEMETRY':'SIMULATION · PICO OFFLINE';badge.classList.toggle('live',connected)}
   if(connected&&t){
    $('diagSpeed').textContent=Number(t.kmh||0).toFixed(1);
    $('diagTrip').textContent=(Number(t.trip_mm||0)/1000000).toFixed(3);
@@ -42,7 +44,11 @@ async function refresh(){
   const events=(data.events||[]).map(e=>JSON.stringify(e)).join('\n');
   if(events!==previousEvents){$('diagEvents').textContent=events||'No commands yet';previousEvents=events;}
   lastLink=connected;
- }catch(error){status('Diagnostic bridge unavailable · '+error.message);setCommands(false);lastLink=false}
+ }catch(error){
+  status('Diagnostic bridge unavailable · '+error.message);setCommands(false);lastLink=false;
+  const badge=document.querySelector('header .badge');
+  if(badge){badge.textContent='SIMULATION · NO HARDWARE CONNECTED';badge.classList.remove('live')}
+ }
  finally{refreshing=false}
 }
 async function send(command,side){
