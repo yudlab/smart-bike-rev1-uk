@@ -2,6 +2,12 @@
 
 Breadboard-first design and object-oriented starter code. **Prototype, not road-ready firmware.**
 
+## Project scope: pedal bicycle only
+
+This is a **human-powered bicycle**. There is no motor, throttle, propulsion control, motor controller or electric-assist system. Electronics are limited to instrumentation, lighting, alerts, GPS/statistics and a handheld remote. Reuse the existing wheel reed switch and headlamp after electrical inspection. The 5 V solenoid is a **parking-lock research item only**, not connected to a wheel or brake in the starter firmware. The mechanical brakes always remain independent of the electronics.
+
+**Current priority:** breadboard logic and SVG/web simulation. No new PDF generation is required for this phase; the previously committed proposal remains reference material only.
+
 ## Try the animated lab
 
 No npm installation needed. From the repository directory:
