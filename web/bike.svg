@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 510" role="img" aria-labelledby="title"><title id="title">Smart bike equipment layout</title>
+<g fill="none" stroke="#7691aa" stroke-width="8"><circle cx="220" cy="350" r="110"/><circle cx="750" cy="350" r="110"/></g>
+<g id="wheels" fill="none" stroke="#344c63" stroke-width="2"><path d="M110 350h220M220 240v220M140 270l160 160M140 430l160-160M640 350h220M750 240v220M670 270l160 160M670 430l160-160"/></g>
+<path d="M220 350L350 200 460 350H220M350 200H660L460 350 350 200M660 200l90 150M660 200l-20-65h65M350 200l-15-48" fill="none" stroke="#43d7c4" stroke-width="12" stroke-linejoin="round"/>
+<path d="M305 150h80M460 350l35 20h25" stroke="#d6e8ef" stroke-width="12" fill="none"/>
+<circle cx="460" cy="350" r="22" fill="#102536" stroke="#95b5c7" stroke-width="4"/>
+<rect x="416" y="216" width="124" height="62" rx="10" fill="#243e50" stroke="#43d7c4" stroke-width="2"/>
+<rect x="598" y="110" width="55" height="38" rx="5" fill="#102536" stroke="#43d7c4" stroke-width="2"/>
+<text x="609" y="135" fill="#fff" font-family="sans-serif" font-size="18">24</text>
+<path id="beam" d="M704 175l225-65v145z" fill="#fff2aa" opacity=".08"/>
+<rect id="front" x="681" y="162" width="35" height="24" rx="6" fill="#60747d"/>
+<rect id="rear" x="289" y="163" width="28" height="18" rx="5" fill="#702d3c"/>
+<g id="left" fill="#86652e"><circle cx="690" cy="206" r="10"/><circle cx="291" cy="205" r="10"/></g>
+<g id="right" fill="#86652e"><circle cx="719" cy="206" r="10"/><circle cx="320" cy="205" r="10"/></g>
+<rect x="697" y="298" width="13" height="28" rx="4" fill="#b5cbd4"/>
+<g fill="#acc3d5" font-family="sans-serif" font-size="17"><text x="390" y="305">Pico + ESP enclosure</text><text x="535" y="90">2-inch SPI display</text><text x="721" y="292">Reed sensor</text><text x="278" y="120">Rear lamps</text></g>
+<g stroke="#6b8799" stroke-width="1" fill="none"><path d="M625 96v14M330 126l-26 36M479 281v10"/></g>
+<g transform="translate(45 25)"><rect width="115" height="175" rx="18" fill="#183044" stroke="#527086"/><rect x="18" y="20" width="79" height="65" rx="6" fill="#235662"/><circle cx="57" cy="123" r="17" fill="#bcc8bf"/><text x="17" y="162" font-size="13" font-family="sans-serif" fill="#b7cddb">ESP remote</text></g>
+</svg>
